@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7C7BAF4-9595-4DE2-82E8-6B6CF5D39A60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>H2Stats</RootNamespace>
+    <AssemblyName>h2stats</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TeeChart.Lite, Version=2.0.2263.29186, Culture=neutral, PublicKeyToken=9c8126276c77bdb7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultGameViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefaultGameViewer.Designer.cs">
+      <DependentUpon>DefaultGameViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownloadForm.Designer.cs">
+      <DependentUpon>DownloadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadForm.BGThread.cs">
+      <DependentUpon>DownloadForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FavoritesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FavoritesForm.Designer.cs">
+      <DependentUpon>FavoritesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameSearchForm.Designer.cs">
+      <DependentUpon>GameSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterImageCache.cs" />
+    <Compile Include="PluginLoader.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefaultGameViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DefaultGameViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloadForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DownloadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FavoritesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FavoritesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameSearchForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GameSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TagEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TotalsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\H2Stats.Data.HaloDataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="TagEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagEditorForm.Designer.cs">
+      <DependentUpon>TagEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalsForm.Designer.cs">
+      <DependentUpon>TotalsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\H2Stats.Controls\H2Stats.Controls.csproj">
+      <Project>{A755889A-81C9-487A-801C-E03ED31FFFA4}</Project>
+      <Name>H2Stats.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H2Stats.Data\H2Stats.Data.csproj">
+      <Project>{1607396C-4196-4C66-88EF-EAFE0D73B23C}</Project>
+      <Name>H2Stats.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H2Stats.Download\H2Stats.Downloader.csproj">
+      <Project>{780FD4D9-7F8D-428A-8D58-731B848FD1BD}</Project>
+      <Name>H2Stats.Downloader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\multiple_kill_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\multiple_kill_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\multiple_kill_4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\multiple_kill_5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\multiple_kill_6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\kills_in_a_row_5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\kills_in_a_row_10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\kills_in_a_row_15.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\kills_in_a_row_25.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\kills_in_a_row_20.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\bash_kill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\stealth_kill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\sniper_kill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\boarded_vehicle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\grenade_stick.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\collision_kill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\ctf_bomb_carrier_kill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\ctf_bomb_planted.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\ctf_flag_carrier_kill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\ctf_flag_returned.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\ctf_flag_grab.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Gametypes\Slayer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Gametypes\CTF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Gametypes\Assualt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Gametypes\Territories.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Gametypes\Oddball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Gametypes\KOTH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Medals\multiple_kill_7_or_more.gif" />
+    <None Include="bin\Debug\Images\Maps\Zanzibar.jpg" />
+    <None Include="bin\Debug\Images\Maps\Ascension.jpg" />
+    <None Include="bin\Debug\Images\Maps\Backwash.jpg" />
+    <None Include="bin\Debug\Images\Maps\Beaver Creek.jpg" />
+    <None Include="bin\Debug\Images\Maps\Burial Mounds.jpg" />
+    <None Include="bin\Debug\Images\Maps\Coagulation.jpg" />
+    <None Include="bin\Debug\Images\Maps\Colossus.jpg" />
+    <None Include="bin\Debug\Images\Maps\Containment.jpg" />
+    <None Include="bin\Debug\Images\Maps\Elongation.jpg" />
+    <None Include="bin\Debug\Images\Maps\Foundation.jpg" />
+    <None Include="bin\Debug\Images\Maps\Gemini.jpg" />
+    <None Include="bin\Debug\Images\Maps\Headlong.jpg" />
+    <None Include="bin\Debug\Images\Maps\Ivory Tower.jpg" />
+    <None Include="bin\Debug\Images\Maps\Lockout.jpg" />
+    <None Include="bin\Debug\Images\Maps\Midship.jpg" />
+    <None Include="bin\Debug\Images\Maps\Relic.jpg" />
+    <None Include="bin\Debug\Images\Maps\sanctuary.jpg" />
+    <None Include="bin\Debug\Images\Maps\Terminal.jpg" />
+    <None Include="bin\Debug\Images\Maps\Turf.jpg" />
+    <None Include="bin\Debug\Images\Maps\Warlock.jpg" />
+    <None Include="bin\Debug\Images\Maps\Waterworks.jpg" />
+    <Content Include="Things To Do.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

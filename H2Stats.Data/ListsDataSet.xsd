@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ListsDataSet" targetNamespace="http://tempuri.org/ListsDataSet.xsd" xmlns:mstns="http://tempuri.org/ListsDataSet.xsd" xmlns="http://tempuri.org/ListsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="h2statsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="h2statsConnectionString (Settings)" PropertyReference="ApplicationSettings.H2Stats.Data.Properties.Settings.GlobalReference.Default.h2statsConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FindAllGametypesTableAdapter" GeneratorDataComponentClassName="FindAllGametypesTableAdapter" Name="FindAllGametypes" UserDataComponentName="FindAllGametypesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="h2statsConnectionString (Settings)" DbObjectName="FindAllGametypes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT Gametype FROM FindAllGametypes</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Gametype" DataSetColumn="Gametype" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FindAllMapsTableAdapter" GeneratorDataComponentClassName="FindAllMapsTableAdapter" Name="FindAllMaps" UserDataComponentName="FindAllMapsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="h2statsConnectionString (Settings)" DbObjectName="FindAllMaps" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT Map FROM FindAllMaps</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Map" DataSetColumn="Map" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FindAllMatchtypesTableAdapter" GeneratorDataComponentClassName="FindAllMatchtypesTableAdapter" Name="FindAllMatchtypes" UserDataComponentName="FindAllMatchtypesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="h2statsConnectionString (Settings)" DbObjectName="FindAllMatchtypes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT Matchtype FROM FindAllMatchtypes</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Matchtype" DataSetColumn="Matchtype" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FindAllPlaylistsTableAdapter" GeneratorDataComponentClassName="FindAllPlaylistsTableAdapter" Name="FindAllPlaylists" UserDataComponentName="FindAllPlaylistsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="h2statsConnectionString (Settings)" DbObjectName="FindAllPlaylists" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT Playlist FROM FindAllPlaylists</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Playlist" DataSetColumn="Playlist" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ListsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ListsDataSet" msprop:Generator_DataSetName="ListsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FindAllGametypes" msprop:Generator_UserTableName="FindAllGametypes" msprop:Generator_RowDeletedName="FindAllGametypesRowDeleted" msprop:Generator_TableClassName="FindAllGametypesDataTable" msprop:Generator_RowChangedName="FindAllGametypesRowChanged" msprop:Generator_RowClassName="FindAllGametypesRow" msprop:Generator_RowChangingName="FindAllGametypesRowChanging" msprop:Generator_RowEvArgName="FindAllGametypesRowChangeEvent" msprop:Generator_RowEvHandlerName="FindAllGametypesRowChangeEventHandler" msprop:Generator_TablePropName="FindAllGametypes" msprop:Generator_TableVarName="tableFindAllGametypes" msprop:Generator_RowDeletingName="FindAllGametypesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Gametype" msprop:Generator_UserColumnName="Gametype" msprop:Generator_ColumnPropNameInRow="Gametype" msprop:Generator_ColumnVarNameInTable="columnGametype" msprop:Generator_ColumnPropNameInTable="GametypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FindAllMaps" msprop:Generator_UserTableName="FindAllMaps" msprop:Generator_RowDeletedName="FindAllMapsRowDeleted" msprop:Generator_TableClassName="FindAllMapsDataTable" msprop:Generator_RowChangedName="FindAllMapsRowChanged" msprop:Generator_RowClassName="FindAllMapsRow" msprop:Generator_RowChangingName="FindAllMapsRowChanging" msprop:Generator_RowEvArgName="FindAllMapsRowChangeEvent" msprop:Generator_RowEvHandlerName="FindAllMapsRowChangeEventHandler" msprop:Generator_TablePropName="FindAllMaps" msprop:Generator_TableVarName="tableFindAllMaps" msprop:Generator_RowDeletingName="FindAllMapsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Map" msprop:Generator_UserColumnName="Map" msprop:Generator_ColumnPropNameInRow="Map" msprop:Generator_ColumnVarNameInTable="columnMap" msprop:Generator_ColumnPropNameInTable="MapColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FindAllMatchtypes" msprop:Generator_UserTableName="FindAllMatchtypes" msprop:Generator_RowDeletedName="FindAllMatchtypesRowDeleted" msprop:Generator_TableClassName="FindAllMatchtypesDataTable" msprop:Generator_RowChangedName="FindAllMatchtypesRowChanged" msprop:Generator_RowClassName="FindAllMatchtypesRow" msprop:Generator_RowChangingName="FindAllMatchtypesRowChanging" msprop:Generator_RowEvArgName="FindAllMatchtypesRowChangeEvent" msprop:Generator_RowEvHandlerName="FindAllMatchtypesRowChangeEventHandler" msprop:Generator_TablePropName="FindAllMatchtypes" msprop:Generator_TableVarName="tableFindAllMatchtypes" msprop:Generator_RowDeletingName="FindAllMatchtypesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Matchtype" msprop:Generator_UserColumnName="Matchtype" msprop:Generator_ColumnPropNameInRow="Matchtype" msprop:Generator_ColumnVarNameInTable="columnMatchtype" msprop:Generator_ColumnPropNameInTable="MatchtypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FindAllPlaylists" msprop:Generator_UserTableName="FindAllPlaylists" msprop:Generator_RowDeletedName="FindAllPlaylistsRowDeleted" msprop:Generator_TableClassName="FindAllPlaylistsDataTable" msprop:Generator_RowChangedName="FindAllPlaylistsRowChanged" msprop:Generator_RowClassName="FindAllPlaylistsRow" msprop:Generator_RowChangingName="FindAllPlaylistsRowChanging" msprop:Generator_RowEvArgName="FindAllPlaylistsRowChangeEvent" msprop:Generator_RowEvHandlerName="FindAllPlaylistsRowChangeEventHandler" msprop:Generator_TablePropName="FindAllPlaylists" msprop:Generator_TableVarName="tableFindAllPlaylists" msprop:Generator_RowDeletingName="FindAllPlaylistsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Playlist" msprop:Generator_UserColumnName="Playlist" msprop:Generator_ColumnPropNameInRow="Playlist" msprop:Generator_ColumnVarNameInTable="columnPlaylist" msprop:Generator_ColumnPropNameInTable="PlaylistColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,191 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="H2Stats.Downloader.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OverviewBaseURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/PlayerStats.aspx?player=</Value>
+    </Setting>
+    <Setting Name="GameListBaseURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/PlayerGameList.aspx?player=</Value>
+    </Setting>
+    <Setting Name="GameListPageURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/PlayerGameList.aspx?player={0}&amp;page={1}</Value>
+    </Setting>
+    <Setting Name="FindValidGamesRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;a id="RecentGames_ctl[0-9]*_GameLink" class="span" href="\/Stats\/GameStats.aspx\?gameID=[0-9]*&amp;amp;player=</Value>
+    </Setting>
+    <Setting Name="MainStatsPageURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/GameStats.aspx?gameID=</Value>
+    </Setting>
+    <Setting Name="KillsStatsPageURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/GameStats.aspx?panel=kills&amp;gameid=</Value>
+    </Setting>
+    <Setting Name="PvPStatsPageURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/GameStats.aspx?panel=vs&amp;gameid=</Value>
+    </Setting>
+    <Setting Name="HitsStatsPageURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/GameStats.aspx?panel=hits&amp;gameid=</Value>
+    </Setting>
+    <Setting Name="MedalsStatsPageURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/GameStats.aspx?panel=medals&amp;gameid=</Value>
+    </Setting>
+    <Setting Name="GamePurgedMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">We’re sorry, this game has been partially purged.</Value>
+    </Setting>
+    <Setting Name="h2statsConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source="C:\Documents and Settings\Matt\My Documents\CSharp\h2stats.mdb"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source="C:\Documents and Settings\Matt\My Documents\CSharp\h2stats.mdb"</Value>
+    </Setting>
+    <Setting Name="StatsPageUrls" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/GameStats.aspx?panel={0}&amp;gameid={1}</Value>
+    </Setting>
+    <Setting Name="FindMapRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;h4 class="Header"&gt;(.*?)&lt;\/h4&gt;</Value>
+    </Setting>
+    <Setting Name="FindMatchTypeRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;span class="HeaderSub"&gt;(.*?)&lt;\/span&gt;</Value>
+    </Setting>
+    <Setting Name="FindPlaylistDateLength" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;span class="HeaderInfo"&gt;(.*?)&lt;\/span&gt;[&lt;BR&gt;|&lt;br&gt;]</Value>
+    </Setting>
+    <Setting Name="BungieTimeOffset" Type="System.TimeSpan" Scope="Application">
+      <Value Profile="(Default)">07:00:00</Value>
+    </Setting>
+    <Setting Name="GameLengthBeginningIndex" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">13</Value>
+    </Setting>
+    <Setting Name="FindStat1NameRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PlayerStat1Hdr" align="center"&gt;&lt;img .*?="/images/spacer.gif" width="100" height="1" border="0" alt=""&gt;&lt;br&gt;&lt;h4&gt;(.*?)&lt;\/h4&gt;&lt;\/td&gt;</Value>
+    </Setting>
+    <Setting Name="TeamScoreHeaderCode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td&gt;&lt;img SRC="/images/spacer.gif" width="190" height="1" border="0" alt=""&gt;&lt;br&gt;&lt;h4&gt;Team&lt;/h4&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindStat2NameRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PlayerStat2Hdr" align="center"&gt;&lt;img .*?="/images/spacer.gif" width="90" height="1" border="0" alt=""&gt;&lt;br&gt;&lt;h4&gt;(.*?)&lt;\/h4&gt;&lt;\/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindGamertagsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;a id="PlayerListCtrl_pldStats_rpPlayerList_ctl.*?_GamertagLink" class="ContentText".*?&gt;(.*?)&lt;\/a&gt;&lt;</Value>
+    </Setting>
+    <Setting Name="FindStat1ValueRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldStats_rpPlayerList_ctl{0:00}_tdStat1" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;\/span&gt;&lt;\/td&gt;</Value>
+    </Setting>
+    <Setting Name="DateTimeFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MM/d/yyyy h:m tt</Value>
+    </Setting>
+    <Setting Name="TimeFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">hh:mm:ss</Value>
+    </Setting>
+    <Setting Name="FindScoreValueRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldStats_rpPlayerList_ctl{0:00}_tdScore" bgcolor="[abcdef0-9]*"&gt;
+				&lt;table cellpadding="0" cellspacing="0" border="0" width="55" height="20px"&gt;
+				&lt;tr&gt;
+					&lt;td align="center"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindStat2ValueRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldStats_rpPlayerList_ctl{0:00}_tdStat2" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindColorRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldStats_rpPlayerList_ctl{0:00}_tdStat1" align="center" bgcolor="(.*?)"&gt;</Value>
+    </Setting>
+    <Setting Name="FindKillsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldKills_rpPlayerList_ctl{0:00}_tdKills" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindAssistsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldKills_rpPlayerList_ctl{0:00}_tdAssists" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindDeathsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldKills_rpPlayerList_ctl{0:00}_tdDeaths" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindSuicidesRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldKills_rpPlayerList_ctl{0:00}_tdSuicides" bgcolor="[abcdef0-9]*"&gt;
+				&lt;table cellpadding="0" cellspacing="0" border="0" width="65" height="20px"&gt;
+				&lt;tr&gt;
+					&lt;td align="center"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindMostKilledByRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldVs_rpPlayerList_ctl{0:00}_tdReaper" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindMostKilledRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldVs_rpPlayerList_ctl{0:00}_tdFodder" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindShotsHitRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldHits_rpPlayerList_ctl{0:00}_tdHits" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindShotsFiredRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldHits_rpPlayerList_ctl{0:00}_tdFired" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindAccuracyRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldHits_rpPlayerList_ctl{0:00}_tdAccuracy" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindHeadshotsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldHits_rpPlayerList_ctl{0:00}_tdHeadShots" align="center" bgcolor="[abcdef0-9]*"&gt;
+				&lt;table cellpadding="0" cellspacing="0" border="0" width="55" height="20px"&gt;
+				&lt;tr&gt;
+					&lt;td align="center"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindTotalMedalsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_rpPlayerList_ctl{0:00}_tdMedalAmt" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;\/span&gt;&lt;\/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindAllMedalValuesRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td valign="center" width="15" align="right"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;\/span&gt;</Value>
+    </Setting>
+    <Setting Name="FindAllMedalNamesRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td&gt;&lt;a href="#" title="(.*?) -</Value>
+    </Setting>
+    <Setting Name="FindMedalCountRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldMedals_rpPlayerList_ctl{0:00}_tdMedalAmt" align="center" bgcolor="[abcdef0-9]*"&gt;&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindIconUrlRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;img id="StatsHeadControl_EmblemCtrl_imgEmblem" src="(.*?)"</Value>
+    </Setting>
+    <Setting Name="FindAllPlaylistNamesRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;span id="dlHopperRanks_ctl[0-9]*_HopperName"&gt;(.*?)&lt;\/span&gt;</Value>
+    </Setting>
+    <Setting Name="FindAllPlaylistRanksRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;div class="ExpBarText" style="left:20"&gt;([0-9]*?)&lt;\/div&gt;</Value>
+    </Setting>
+    <Setting Name="FindAllRankPercentRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td background="/images/Themes/Halo2Stats/LevelBar.gif"&gt;&lt;img src="/images/spacer.gif" border="0" width="([0-9]*?)"</Value>
+    </Setting>
+    <Setting Name="FindAllGamesAndWinsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td align="center"&gt;&lt;span&gt;
+									([0-9]*?)&lt;/span&gt;</Value>
+    </Setting>
+    <Setting Name="FindBetrayalsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td align="center" bgcolor="{0}"&gt;.+?&lt;span class="ContentText"&gt;(.*?)&lt;/span&gt;</Value>
+    </Setting>
+    <Setting Name="FindPlaylistInfoRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;p&gt;&lt;b&gt;&lt;font color="white"&gt;{0}&lt;\/font&gt;&lt;\/b&gt;&lt;br&gt;
+(.*?)&lt;p&gt;&lt;\/p&gt;</Value>
+    </Setting>
+    <Setting Name="FindRankedRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;p&gt;Ranked: &lt;b&gt;([A-Z]*?)&lt;\/b&gt;</Value>
+    </Setting>
+    <Setting Name="PlaylistInfoUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.bungie.net/Stats/page.aspx?section=FAQInfo&amp;subsection=playlists&amp;page=1</Value>
+    </Setting>
+    <Setting Name="FindPlaylistDescriptionRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;span&gt;&lt;i&gt;(.*?)&lt;\/i&gt;&lt;\/span&gt;</Value>
+    </Setting>
+    <Setting Name="FindBetrayalsTableRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;div id="PlayerListCtrl_pldVs_rpPlayerList_ctl{0:00}_pnlVsDisplay" style="background-color:#154978;display:none;"&gt;(.*?)&lt;td id="PlayerListCtrl_pldVs_rpPlayerList_ctl</Value>
+    </Setting>
+    <Setting Name="FindClanRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;a href="/Stats/ClanStats.aspx?clan=(.*?)"&gt;</Value>
+    </Setting>
+    <Setting Name="FindAllCurrentPlaylistsRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;p&gt;&lt;b&gt;&lt;font color="white"&gt;(.*?)&lt;\/font&gt;&lt;\/b&gt;&lt;br&gt;
+&lt;div class="RuleSmallTop"&gt;&lt;/div&gt;</Value>
+    </Setting>
+    <Setting Name="FindPlaceRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;td id="PlayerListCtrl_pldStats_rpPlayerList_ctl{0:00}_tdRank" style="text-align:left"&gt;&lt;span&gt;([0-9]*?)[a-z]*&lt;/span&gt;&lt;/td&gt;</Value>
+    </Setting>
+    <Setting Name="FindMedalTableRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;table id="PlayerListCtrl_pldMedals_rpPlayerList_ctl{0:00}_dlPlayerMedals" cellspacing="0" cellpadding="0" border="0"&gt;(.*?)&lt;td align="right" width="7" valign="bottom"&gt;&lt;img SRC="/images/Themes/Halo2Stats/CornerLowerRight.gif" width="7" height="7" border="0" alt=""&gt;&lt;/td&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

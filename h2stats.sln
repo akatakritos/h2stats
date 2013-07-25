@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H2Stats", "h2stats\H2Stats.csproj", "{D7C7BAF4-9595-4DE2-82E8-6B6CF5D39A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H2Stats.Data", "H2Stats.Data\H2Stats.Data.csproj", "{1607396C-4196-4C66-88EF-EAFE0D73B23C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H2Stats.Controls", "H2Stats.Controls\H2Stats.Controls.csproj", "{A755889A-81C9-487A-801C-E03ED31FFFA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H2Stats.Downloader", "H2Stats.Download\H2Stats.Downloader.csproj", "{780FD4D9-7F8D-428A-8D58-731B848FD1BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoBPack.Plugin", "PluginPack.Plugin.dll\CoBPack.Plugin.csproj", "{EC572DA6-B965-42E6-B045-311499CC4045}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "h2StatsSetup", "h2StatsSetup\h2StatsSetup.vdproj", "{1AEE9F63-DC69-4164-9BB2-20EAE3DF5743}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7C7BAF4-9595-4DE2-82E8-6B6CF5D39A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C7BAF4-9595-4DE2-82E8-6B6CF5D39A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C7BAF4-9595-4DE2-82E8-6B6CF5D39A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C7BAF4-9595-4DE2-82E8-6B6CF5D39A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1607396C-4196-4C66-88EF-EAFE0D73B23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1607396C-4196-4C66-88EF-EAFE0D73B23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1607396C-4196-4C66-88EF-EAFE0D73B23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1607396C-4196-4C66-88EF-EAFE0D73B23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A755889A-81C9-487A-801C-E03ED31FFFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A755889A-81C9-487A-801C-E03ED31FFFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A755889A-81C9-487A-801C-E03ED31FFFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A755889A-81C9-487A-801C-E03ED31FFFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780FD4D9-7F8D-428A-8D58-731B848FD1BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780FD4D9-7F8D-428A-8D58-731B848FD1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780FD4D9-7F8D-428A-8D58-731B848FD1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780FD4D9-7F8D-428A-8D58-731B848FD1BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC572DA6-B965-42E6-B045-311499CC4045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC572DA6-B965-42E6-B045-311499CC4045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC572DA6-B965-42E6-B045-311499CC4045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC572DA6-B965-42E6-B045-311499CC4045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEE9F63-DC69-4164-9BB2-20EAE3DF5743}.Debug|Any CPU.ActiveCfg = Debug
+		{1AEE9F63-DC69-4164-9BB2-20EAE3DF5743}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

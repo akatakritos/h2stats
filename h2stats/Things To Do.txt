@@ -1,0 +1,22 @@
+
+Recent games as a plugin
+	Game Downloaded events?
+	Game viewed events?
+
+Bungie Style game viewer
+	Change DefaultGameViewer to work like a plugin
+
+Delete Game (SQL)
+
+Purge unessential data (SQL)
+
+CHECK Image Cache - extend IHaloInfoSupplier to include images, by string name and strong typed (so plugins can access)
+
+Delete game as split button: delete game viewer, or delete whole game
+
+In Database menu, delete all gameviewers that are not favorites (SQL)
+
+Release Notes:
+--------------
+
+Need to change the connection string

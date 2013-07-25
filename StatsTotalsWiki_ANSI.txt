@@ -1,0 +1,136 @@
+== Statistics Totals for #Gamertag# ==
+Created #Date# with [[User:Leviathan 0x57|CoB Leviathan's]] (as of now) unnamed stat tracking utility.
+
+
+=== Totals ===
+{| cellpadding=3 cellspacing=3 border=0 bgcolor=white
+|- bgcolor='white' align=left
+| bgcolor="#F2F2F2" | '''Kills''' || bgcolor="#F2F2F2" align=center | #Kills# || bgcolor="#F2F2F2" | '''Shots Hit''' || bgcolor="#F2F2F2" align=center | #ShotsHit#
+|- bgcolor='white'
+| bgcolor="#E0E0E0" | '''Deaths''' || bgcolor="#E0E0E0" align=center | #Deaths# || bgcolor="#E0E0E0" | '''Shots Fired''' || bgcolor="#E0E0E0" align=center | #ShotsFired#
+|- bgcolor='white'
+| bgcolor="#F2F2F2" | '''Assists'''|| bgcolor="#F2F2F2" align=center | #Assists# || bgcolor="#F2F2F2" | '''Accuracy''' || bgcolor="#F2F2F2" align=center | #Accuracy#%
+|- bgcolor='white'
+| bgcolor="#E0E0E0" | '''Suicides'''|| bgcolor="#E0E0E0" align=center | #Suicides# || bgcolor="#E0E0E0" | '''Headshots''' || bgcolor="#E0E0E0" align=center | #Headshots#
+|- bgcolor='white'
+| bgcolor="#F2F2F2" | '''Betrayals'''|| bgcolor="#F2F2F2" align=center | #Betrayals# || bgcolor="#F2F2F2" | '''Shots / Kill''' || bgcolor="#F2F2F2" align=center | #ShotsPerKill#
+|- bgcolor='white'
+| bgcolor="#E0E0E0" | '''KpD'''|| bgcolor="#E0E0E0" align=center | #KpD# || bgcolor="#E0E0E0" | '''Games''' || bgcolor="#E0E0E0" align=center | #Games#
+|- bgcolor='white'
+| bgcolor="#F2F2F2" | '''KApD'''|| bgcolor="#F2F2F2" align=center | #KApD# || bgcolor="#F2F2F2" | '''Time''' || bgcolor="#F2F2F2" align=center | #Time#
+|- bgcolor='white'
+| bgcolor="#E0E0E0" | '''Kills / Min'''|| bgcolor="#E0E0E0" align=center | #KillsPerMin#
+|- bgcolor='white'
+|}
+
+
+
+=== Medals ===
+{| cellpadding=3 cellspacing=3 border=0 bgcolor=white
+|- bgcolor='white' align=left
+| bgcolor="#E0E0E0" | <site-image>multiple_kill_2.gif</site-image>||  bgcolor="#E0E0E0" align=center | #DoubleKills# || bgcolor="#E0E0E0" | <site-image>multiple_kill_3.gif</site-image>||  bgcolor="#E0E0E0" align=center | #TripleKills# || bgcolor="#E0E0E0" | <site-image>multiple_kill_4.gif</site-image>||  bgcolor="#E0E0E0" align=center | #Killtaculars# || bgcolor="#E0E0E0" | <site-image>multiple_kill_5.gif</site-image>||  bgcolor="#E0E0E0" align=center | #KillFrenzies# || bgcolor="#E0E0E0" | <site-image>multiple_kill_6.gif</site-image>||  bgcolor="#E0E0E0" align=center | #Killtrocities#
+|- bgcolor='white'
+| bgcolor="#F2F2F2" | <site-image>kills_in_a_row_5.gif</site-image>||  bgcolor="#F2F2F2" align=center | #KillingSprees# || bgcolor="#F2F2F2" | <site-image>kills_in_a_row_10.gif</site-image>||  bgcolor="#F2F2F2" align=center | #RunningRiots# || bgcolor="#F2F2F2" | <site-image>kills_in_a_row_15.gif</site-image>||  bgcolor="#F2F2F2" align=center | #Rampages# || bgcolor="#F2F2F2" | <site-image>kills_in_a_row_20.gif</site-image>||  bgcolor="#F2F2F2" align=center | #Berserkers# || bgcolor="#F2F2F2" | <site-image>kills_in_a_row_25.gif</site-image>||  bgcolor="#F2F2F2" align=center | #Overkills#
+|- bgcolor='white'
+| bgcolor="#E0E0E0" | <site-image>bash_kill.gif</site-image>||  bgcolor="#E0E0E0" align=center | #Beatdowns# || bgcolor="#E0E0E0" | <site-image>stealth_kill.gif</site-image>||  bgcolor="#E0E0E0" align=center | #Assassinations# || bgcolor="#E0E0E0" | <site-image>sniper_kill.gif</site-image>||  bgcolor="#E0E0E0" align=center | #Snipes# || bgcolor="#E0E0E0" | <site-image>boarded_vehicle.gif</site-image>||  bgcolor="#E0E0E0" align=center | #BoardedVehicles# || bgcolor="#E0E0E0" | <site-image>grenade_stick.gif</site-image>||  bgcolor="#E0E0E0" align=center | #Sticks#
+|- bgcolor='white'
+| bgcolor="#F2F2F2" | <site-image>collision_kill.gif</site-image>||  bgcolor="#F2F2F2" align=center | #Splatters# || bgcolor="#F2F2F2" | <site-image>ctf_bomb_carrier_kill.gif</site-image>||  bgcolor="#F2F2F2" align=center | #BombKills# || bgcolor="#F2F2F2" | <site-image>ctf_bomb_planted.gif</site-image>||  bgcolor="#F2F2F2" align=center | #BombsPlanted# || bgcolor="#F2F2F2" | <site-image>ctf_flag_carrier_kill.gif</site-image>||  bgcolor="#F2F2F2" align=center | #FlagKills# || bgcolor="#F2F2F2" | <site-image>ctf_flag_returned.gif</site-image>||  bgcolor="#F2F2F2" align=center | #FlagReturns#
+|- bgcolor='white'
+|  bgcolor="#E0E0E0" | <site-image>ctf_flag_grab.gif</site-image>||  bgcolor="#E0E0E0" align=center | #FlagsTaken#
+|- bgcolor='white'
+|}
+
+== Gametype Specific Stats ==
+
+{|
+|-
+|[[Image:CoB_Leviathan_Slayer.jpg|?]] || 
+*Games: #SlayerGames#
+*Wins: #SlayerWins#
+*Percent: #SlayerWinPercent#
+*Best Spree: #SlayerBestSpree#
+*Score: #Slayer Score# 
+|| [[Image:CoB_Leviathan_CTF.jpg|CoB_Leviathan_CTF.jpg]] ||
+*Games: #CTFGames#
+*Wins: #CTFWins#
+*Win Percent: #CTFWinPercent#
+*Flags Captured: #CTFFlagsCaptured#
+*Flags Taken: #CTFFlagsTaken#
+*Flags Saved: #CTFFlagsSaved#
+|| [[Image:CoB_Leviathan_Assault.jpg|CoB_Leviathan_Assault.jpg]] ||
+*Games: #AssaultGames#
+*Wins: #AssaultWins#
+*Win Percent: #AssaultWinPercent#
+*Bombs Taken: #AssaultBombsTaken#
+*Bombs Planted: #AssaultBombsPlanted#
+*Bombers Killed: #AssaultBombersKilled#
+|-
+|[[Image:CoB_Leviathan_Territories.jpg|CoB_Leviathan_Territories.jpg]] ||
+*Games: #TerrGames#
+*Wins: #TerrWins#
+*Win Percent: #TerrWinPercent#
+*Terr. Taken: #TerrTaken#
+*Terr. Lost: #TerrLost#
+*Time: #TerrTime#
+|| [[Image:CoB_Leviathan_Oddball.jpg|CoB_Leviathan_Oddball.jpg]] ||
+*Games: #OddballGames#
+*Wins: #OddballWins#
+*Win Percent: #OddballWinPercent#
+*Carrier Kills: #OddballCarrierKills#
+*Ball Kills: #OddballBallKills#
+*Time: #OddballTime# 
+|| [[Image:CoB_Leviathan_KOTH.jpg|CoB_Leviathan_Oddball.jpg]] ||
+*Games: #KOTHGames#
+*Wins: #KOTHWins#
+*Win Percent: #KOTHWinPercent#
+*Kings Killed: #KOTHKingsKilled#
+*Kills From: #KOTHKillsFrom#
+*Time: #KOTHTime#
+|-
+|}
+
+
+== Statistics Overview ==
+{|
+! Stat !! Count !! Avg !! Min !! Max !! StdDev
+|-
+<Dynamic Table Definition>
+RowColor=#E0E0E0
+AlternateRowColor=#F2F2F2
+ColumnCount=6
+ColumnName1=Name
+ColumnName2=Sum
+ColumnName3=Avg
+ColumnName4=Min
+ColumnName5=Max
+ColumnName6=StdDev
+</Dynamic Table Definition>
+|}
+
+== Medals Overview ==
+{|
+! Icon !! Name !! Count !! Avg !! Min !! Max !! StdDev
+|-
+<Dynamic Table Definition>
+RowColor=#E0E0E0
+AlternateRowColor=#F2F2F2
+ColumnCount=7
+ColumnName1=Icon
+ColumnName2=Name
+ColumnName3=Sum
+ColumnName4=Avg
+ColumnName5=Min
+ColumnName6=Max
+ColumnName7=StdDev
+</Dynamic Table Definition>
+|}
+
+== Kill Types ==
+{|
+! Kill Type !! Count !! Percent
+|-
+<Kill Type Chart>
+RowColor=#E0E0E0
+AlternateRowColor=#F2F2F2
+</Kill Type Chart>
+|}
